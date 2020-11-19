@@ -36,7 +36,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
 				.headers().frameOptions().disable()
 			.and()
 				.authorizeRequests()
-				.antMatchers( "/","/api/v1/**", "/webjars/**").permitAll()
+				.antMatchers( "/","/api/v1/**", "/webjars/**", "/static/images/**").permitAll()
 				//.antMatchers("/index").hasRole(RoleType.USER.getRoleName())
 				.anyRequest().authenticated()
 				/*.and()
