@@ -2,9 +2,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>index</title>
 </head>
 <body>
-<strong><div th:text="${message}"></div></strong>
+    <h1>index.html</h1>
+    <span th:text="${user.getName()}"></span>
+    <span th:text="${user.getEmail()}"></span>
+
 </body>
 </html>
